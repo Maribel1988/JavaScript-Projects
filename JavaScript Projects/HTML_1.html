@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="Javascript/Javacript_1.js"></script>
+        <script src="Javascript/JavaScript_2.js"></script>
+        <link rel="stylesheet" href="Javascript/CSS/CSS_1.css">
+       <style>
+         
+           
+
+        </style>
+    </head>
+    <body>
+        <h1>What is your zodiac sign?</h1>
+        <div><h3>Pick your zodiac sign from the list:</h3></div>
+        <ul>
+            <li>Aries—March 21-April 19</li>
+            <li>Taurus—April 20-May 20</li>
+            <li>Gemini—May 21-June 20</li>
+            <li>Cancer—June 21-July 22</li>
+            <li>Leo—July 23-August 22</li>
+            <li>Virgo—August 23-September 22</li>
+            <li>Libra—September 23-October 22</li>
+            <li>Scorpio—October 23-November 21</li>
+            <li>Sagittarius- 22-November-December 21</li>
+            <li>Capricorn- December 22- January 19</li>
+            <li>Aquarius- Jan 20- Feb 18</li>
+            <li>Pisces- Feb 19- March 20</li>
+        </ul>
+        <div class=><h3>Enter your choice below:</h3></div>
+        <input id="Zodiac_input" type="text"><br>
+        <button onclick="Zodiac_Function()">Submit Zodiac</button>
+        
+        <p id="Output"></p>
+
+<h1>The Chinese Zodiac Signs</h1>
+<h2>Horoscope 2022</h2>
+
+<p>Zodiacs and Compatibility:</p>
+
+<div class="Zodiac1">Pig</div>
+<div class="Zodiac1">Rat</div>
+<div class="Zodiac1">Ox</div>
+<div class="Zodiac1">Tiger</div>
+<canvas id="Zodiac_Sign" width="900" height="100" style="border:5px solid black;"></canvas>
+<p><button onclick="myChineseZodiac()">Click Here!</button></p>
+
+<p>Click button below to enlarge the image:</p>
+<img id="chi_zodiac" src="Images/zodiacCanvas.PNG" alt="The Zodiac" width="20" height="27">
+
+<p>Chinese Zodiac Signs:</p>
+<canvas id="myCanvas" width="525" height="500" 
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+<p><button onclick="myZodiac()">Click Here!</button></p>
+<canvas id="canvasRadient" width="900" height="25" style="border:5px solid black;"></canvas>
+
+<div><h3>Contact Us:</h3>
+<form name="contactForm" action="/action_page.php" onsubmit="return validationForm()" method="post">
+    <label for="firstName">First name:</label><br>
+    <input type="text" id="firstName" name="firstName" required placeholder="Your name.."><br>
+    <label for="lastName" >Last name:</label><br>
+    <input type="text" id="lastName" name="lastName" placeholder="Your last name.."><br>
+    
+    <label for="country">Country</label><br>
+    <select id="country" name="country">
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="usa">USA</option>
+        <option value="Philippines">Philippines</option>
+    </select><br>
+    
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+    <script>
+    var c = document.getElementById("canvasRadient");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 900, 25);
+    </script>
+
+     <script>
+        const collection = document.getElementsByClassName("Zodiac1");
+        collection[0].style.backgroundColor = "red";
+        collection[1].style.backgroundColor = "green";
+        collection[2].style.backgroundColor = "red";
+        collection[3].style.backgroundColor = "green";
+    </script>
+  
+ 
+    </body>
+</html>

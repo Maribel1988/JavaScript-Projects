@@ -9,7 +9,8 @@
 * RevisePortfolio
 ---
 ```
-Academy_cinema is a project where I learn using bootstrap in designing and creating a webpage for cinema. Almost all elements that were used in this project were from bootstrap website.
+Academy_cinema is a project where I learn using bootstrap in designing and creating a webpage for cinema. 
+Almost all elements that were used in this project were from bootstrap website.
 ```
 ```
 One-Page Website
